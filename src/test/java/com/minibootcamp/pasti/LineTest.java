@@ -27,4 +27,11 @@ class LineTest {
 
         assertEquals(10.0, line.getLength(), DELTA);
     }
+
+    @Test
+    public void getLength_ReturnPythagorasOfTwoPoints_WhenPointsFormDiagonalLine() {
+        Line line = new Line(0, 0, 3, 4);
+
+        assertEquals(5.0, line.getLength(), DELTA);
+    }
 }

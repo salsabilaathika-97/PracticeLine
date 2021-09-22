@@ -18,8 +18,8 @@ public class Line {
             return Math.abs(y2 - y1);
         } else if (y1 == y2) {
             return Math.abs(x2 - x1);
+        } else {
+            return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
         }
-
-        return 0.0;
     }
 }
