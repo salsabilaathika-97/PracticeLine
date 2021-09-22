@@ -13,4 +13,11 @@ class LineTest {
 
         assertEquals(0.0, line.getLength(), DELTA);
     }
+
+    @Test
+    public void getLength_ReturnAbsoluteOfY_WhenPointsFormVerticalLine() {
+        Line line = new Line(5, 6, 5, 7);
+
+        assertEquals(1.0, line.getLength(), DELTA);
+    }
 }
