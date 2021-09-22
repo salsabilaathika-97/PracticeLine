@@ -20,4 +20,11 @@ class LineTest {
 
         assertEquals(1.0, line.getLength(), DELTA);
     }
+
+    @Test
+    public void getLength_ReturnAbsoluteOfX_WhenPointsFormHorizontalLine() {
+        Line line = new Line(0, 2, 10, 2);
+
+        assertEquals(10.0, line.getLength(), DELTA);
+    }
 }
